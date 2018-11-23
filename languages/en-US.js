@@ -66,7 +66,7 @@ module.exports = class extends Language {
 		this.duration = duration;
 
 		this.language = {
-			NAUGHTY_WORD_DELETED: `Your message has been deleted, because you used a naughty word.`,
+			NAUGHTY_WORD_DELETED: `${EMOJIS.GAMER.SWEAT} Your message has been deleted, because you used a naughty word.`,
 			NAUGHTY_WORD_DM_TITLE: 'Your message was deleted.',
 			NAUGHTY_WORD_BAD_WORDS: () => `The naughty word or words you used were:`,
 			WARNINGS: 'Warnings',
@@ -78,7 +78,7 @@ module.exports = class extends Language {
 					'',
 					'Advanced: You can also set your own custom embed'
 				].join('\n'),
-			AFK_MESSAGE_UPDATED: 'You have successfully updated your AFK message.',
+			AFK_MESSAGE_UPDATED: `${EMOJI.GAMER.JOY} You have successfully updated your AFK message.`,
 			AFK_STATUS_TOGGLED: status => `You have successfully **${status ? 'ENABLED' : 'DISABLED'}** your AFK message.`,
 			ANNOUNCE_HELP_DESCRIPTION: 'Send an announcement to roles without making them mentionable to everyone on your server.',
 			ANNOUNCE_CONTENT_REQUEST: 'Please type the message you would like to send. **Hint**: You can also send an embed code to send an embed by providing embed code.',
