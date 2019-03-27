@@ -18,9 +18,9 @@ module.exports = class extends Language {
 				].join('\n'),
 			AFK_MESSAGE_UPDATED: 'Ți-ai actualizat cu succes msajul de AFK.',
 			AFK_STATUS_TOGGLED: status => `Ți-ai **${status ? 'Activat' : 'Dezactivat'}** cu succes mesajul de AFK.`,
-			ANNOUNCE_HELP_DESCRIPTION: 'Send an announcement to roles without having to make them mentionable to everyone on your server.',
-			ANNOUNCE_CONTENT_REQUEST: 'Please type the message you would like to send. **Hint**: You can also send an embeded message, through an embed code.',
-			ANNOUNCE_RESPONSE_AUTHOR_TEXT: memberName => `Announcement By: ${memberName}`,
+			ANNOUNCE_HELP_DESCRIPTION: 'Trimite un anunț unui rol, fără a fi nevoit să faci acel rol menționabil de către toți.',
+			ANNOUNCE_CONTENT_REQUEST: 'Scrie mesajul pe care vrei să îl trimiți. **Sfat**: Poți  deasemnea să trimiți un embed, folosind un embed code.',
+			ANNOUNCE_RESPONSE_AUTHOR_TEXT: memberName => `Anunț de catre: ${memberName}`,
 			ANNOUNCE_RESPONSE_FAILED: 'I was unable to send a message to the channel you provided. Please check the permissions to make sure I have all the necessary permissions.',
 			ANNOUNCE_RESPONSE_SUCCESS: 'The announcement was successfully sent.',
 			COMMANDS_SERVER: {
