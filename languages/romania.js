@@ -7,17 +7,17 @@ module.exports = class extends Language {
 		super(...args);
 
 		this.language = {
-			WARNINGS: 'Warnings',
-			AFK_HELP_DESCRIPTION: 'Enable/Disable or set a AFK message for yourself.',
+			WARNINGS: 'Avertismente',
+			AFK_HELP_DESCRIPTION: 'Activează/Dezactivează sau setază un mesaj AFK pentru tine.',
 			AFK_HELP_EXTENDED: prefix =>
 				[
-					`**${prefix}afk** will enable or disable your AFK message`,
-					`**${prefix}afk your afk message here** will set your new AFK message to be sent.`,
+					`**${prefix}afk** va activa sau dezactiva mesajul tău de AFK.`,
+					`**${prefix}afk mesajul tău de afk** va seta noul tău mesaj de AFK`,
 					'',
-					'Advanced: You can also set your afk message with a custom made embed!'
+					'Avansat: Poți deasemnea să îți customizezi mesajul de AFK cu un embed!'
 				].join('\n'),
-			AFK_MESSAGE_UPDATED: 'You have successfully updated your AFK message.',
-			AFK_STATUS_TOGGLED: status => `You have successfully **${status ? 'ENABLED' : 'DISABLED'}** your AFK message.`,
+			AFK_MESSAGE_UPDATED: 'Ți-ai actualizat cu succes msajul de AFK.',
+			AFK_STATUS_TOGGLED: status => `Ți-ai **${status ? 'Activat' : 'Dezactivat'}** cu succes mesajul de AFK.`,
 			ANNOUNCE_HELP_DESCRIPTION: 'Send an announcement to roles without having to make them mentionable to everyone on your server.',
 			ANNOUNCE_CONTENT_REQUEST: 'Please type the message you would like to send. **Hint**: You can also send an embeded message, through an embed code.',
 			ANNOUNCE_RESPONSE_AUTHOR_TEXT: memberName => `Announcement By: ${memberName}`,
