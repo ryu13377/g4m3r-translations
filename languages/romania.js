@@ -19,13 +19,13 @@ module.exports = class extends Language {
 			AFK_MESSAGE_UPDATED: 'Ți-ai actualizat cu succes msajul de AFK.',
 			AFK_STATUS_TOGGLED: status => `Ți-ai **${status ? 'Activat' : 'Dezactivat'}** cu succes mesajul de AFK.`,
 			ANNOUNCE_HELP_DESCRIPTION: 'Trimite un anunț unui rol, fără a fi nevoit să faci acel rol menționabil de către toți.',
-			ANNOUNCE_CONTENT_REQUEST: 'Scrie mesajul pe care vrei să îl trimiți. **Sfat**: Poți  deasemnea să trimiți un embed, folosind un embed code.',
+			ANNOUNCE_CONTENT_REQUEST: 'Scrie mesajul pe care vrei să îl trimiți. **Sfat**: Poți  deasemenea să trimiți un embed, folosind un embed code.',
 			ANNOUNCE_RESPONSE_AUTHOR_TEXT: memberName => `Anunț de catre: ${memberName}`,
-			ANNOUNCE_RESPONSE_FAILED: 'I was unable to send a message to the channel you provided. Please check the permissions to make sure I have all the necessary permissions.',
-			ANNOUNCE_RESPONSE_SUCCESS: 'The announcement was successfully sent.',
+			ANNOUNCE_RESPONSE_FAILED: 'Nu am putut trimite un mesaj in canalul pe care l-ai specificat. Verfica permisiile mele pentru a fi sigur ca am toate permisiile necesare.',
+			ANNOUNCE_RESPONSE_SUCCESS: 'Anuntul a fost trimis cu succes.',
 			COMMANDS_SERVER: {
-				title: guildName => `Server Stats For « ${guildName} »`,
-				statsName: 'Server Specific',
+				title: guildName => `Statusul serverului : « ${guildName} »`,
+				statsName: 'Specific Serverului',
 				statsValue: (createdAt, owner, channels, roles, members, bots) =>
 					[`Created [**${createdAt}**]`, `👑 [**${owner}**]`, `Channels [**${channels}**]`, `Roles [**${roles}**]`, `👥 [**${members}**]`, `🤖 [**${bots}**]`].join('\n'),
 				settingsName: 'G4M3R Specific Settings',
